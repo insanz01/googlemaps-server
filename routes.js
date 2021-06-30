@@ -1,11 +1,14 @@
 'use strict';
 
 module.exports = (app) => {
-	let myJson = require('./controller');
+	let myApp = require('./controller');
 
 	app.route('/')
-		.get(myJson.index);
+		.get(myApp.index);
 
-	app.route('/bank')
-		.get(myJson.getAllBank);
+	app.route('/banks')
+		.get(myApp.getAllBank);
+
+	app.route('/bank/:id')
+		.get(myApp.getBankById);
 }
