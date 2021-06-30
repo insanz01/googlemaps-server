@@ -1,0 +1,19 @@
+{
+  "name": "googlemaps",
+  "version": "1.0.0",
+  "description": "Aplikasi Google Maps iFrame Bank Kalsel BJB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insanz01/googlemaps-server.git"
+  },
+  "author": "insankamil002@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insanz01/googlemaps-server/issues"
+  },
+  "homepage": "https://github.com/insanz01/googlemaps-server#readme"
+}
