@@ -11,7 +11,20 @@ exports.index = (req, res) => {
 exports.getAllBank = (req, res) => {
 	connection.query("SELECT * FROM lokasi", (err, rows, fields) => {
 		if(err) {
-			connection.log(err);
+			console.error(err);
+		} else {
+			response.ok(rows, res);
+		}
+	});
+};
+
+// get bank data by id
+exports.getBankById = (req, res) => {
+	let id = req.params.id;
+
+	connection.query(`SELECT * FROM lokasi WHERE id = ?`, [id], (err, rows, fields) => {
+		if(err) {
+			console.error(err);
 		} else {
 			response.ok(rows, res);
 		}
