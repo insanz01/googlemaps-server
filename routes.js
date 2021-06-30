@@ -7,8 +7,11 @@ module.exports = (app) => {
 		.get(myApp.index);
 
 	app.route('/banks')
-		.get(myApp.getAllBank);
+		.get(myApp.getAllBank)
+		.post(myApp.addBank)
+		.put(myApp.updateBank);
 
 	app.route('/bank/:id')
-		.get(myApp.getBankById);
+		.get(myApp.getBankById)
+		.delete(myApp.deleteBank);
 }
